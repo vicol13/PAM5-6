@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -44,7 +45,7 @@
                     android:id="@+id/doctorRate"
                     android:layout_width="25sp"
                     android:layout_height="22sp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="4dp"
                     android:layout_marginBottom="12dp"
                     android:fontFamily="@font/proxima_light"
                     android:gravity="center"
@@ -65,49 +66,51 @@
                     app:layout_constraintTop_toBottomOf="@+id/doctorSpeciality">
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/star5"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/star" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/star4"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView8"
+                        app:layout_constraintEnd_toStartOf="@+id/star5"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/star" />
 
                     <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="25dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView9"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/star" />
-
-                    <ImageView
-                        android:id="@+id/imageView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="25dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView5"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/star" />
-
-                    <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/star3"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/star" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        app:layout_constraintEnd_toStartOf="@+id/star1"
+                        app:layout_constraintStart_toEndOf="@+id/star3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/star" />
+
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/star4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/star" />
                 </android.support.constraint.ConstraintLayout>
 
@@ -181,7 +184,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/doctorDescription"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -199,17 +202,18 @@
             android:layout_height="350dp">
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout7"
                 android:layout_width="350dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginEnd="31dp"
-                android:layout_marginBottom="17dp"
-                app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/doctorLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_marginStart="8dp"
@@ -242,21 +246,22 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView14"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/place" />
+                    app:srcCompat="@drawable/location" />
             </android.support.constraint.ConstraintLayout>
 
-            <android.support.constraint.ConstraintLayout
-                android:id="@+id/constraintLayout7"
+            <ImageView
+                android:id="@+id/imageView10"
                 android:layout_width="350dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/screenshot_1"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:scaleType="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+                app:srcCompat="@drawable/map_screen" />
 
-            </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
 
         <android.support.constraint.ConstraintLayout

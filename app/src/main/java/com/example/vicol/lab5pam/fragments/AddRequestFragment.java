@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.vicol.lab5pam.R;
 
-public class HomeFragment extends Fragment {
+public class AddRequestFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

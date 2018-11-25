@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Login"
+    tools:context=".activityes.Login"
     tools:layout_editor_absoluteY="25dp">
 
     <android.support.constraint.ConstraintLayout
@@ -17,7 +17,9 @@
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:onClick="onNextClick">
 
         <TextView
             android:id="@+id/textView8"
@@ -92,7 +94,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/passWordEditText_login"
             android:layout_width="275dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"

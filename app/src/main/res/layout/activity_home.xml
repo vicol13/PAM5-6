@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
+    tools:context=".activityes.Home"
     tools:layout_editor_absoluteY="25dp">
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="fill_parent"
-        android:layout_height="572dp"
+        android:layout_height="590dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,10 +22,11 @@
         android:id="@+id/bottomBarParrent"
         android:layout_width="match_parent"
         android:layout_height="84dp"
+        android:layout_marginTop="572dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer">
+        app:layout_constraintTop_toTopOf="@+id/fragmentContainer">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/shadow"
@@ -206,7 +207,9 @@
             app:layout_constraintEnd_toEndOf="@+id/bottomBar"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:onClick="openAddNotificationFragment">
 
 
             <ImageView

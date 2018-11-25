@@ -1,9 +1,11 @@
-package com.example.vicol.lab5pam;
+package com.example.vicol.lab5pam.activityes;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.vicol.lab5pam.R;
 
 public class Welcome extends AppCompatActivity {
 
@@ -20,6 +22,7 @@ public class Welcome extends AppCompatActivity {
 
     public void loginActivity(View view) {
         Intent intent = new Intent(Welcome.this,Login.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(intent);
     }
 

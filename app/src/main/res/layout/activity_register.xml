@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".activityes.Register">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="13dp"
                 android:background="@drawable/singup_text_container"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.4"
@@ -94,7 +94,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/loginTextView">
 
                 <EditText
-                    android:id="@+id/loginEditText"
+                    android:id="@+id/loginInput"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="56dp"
@@ -203,7 +203,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/nameInput"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="56dp"
@@ -251,7 +251,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <EditText
-                    android:id="@+id/birthdayEditText"
+                    android:id="@+id/birthdayInput"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="56dp"
@@ -299,7 +299,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <EditText
-                    android:id="@+id/emailEditText"
+                    android:id="@+id/emailInput"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="56dp"
@@ -347,7 +347,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <EditText
-                    android:id="@+id/phoneEditText"
+                    android:id="@+id/phoneInput"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="56dp"
@@ -395,7 +395,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <EditText
-                    android:id="@+id/adressEditText"
+                    android:id="@+id/adressInput"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="56dp"
@@ -423,7 +423,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="saveUser">
 
                 <TextView
                     android:id="@+id/textView6"

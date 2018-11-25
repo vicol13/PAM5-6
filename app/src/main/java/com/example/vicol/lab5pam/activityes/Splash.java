@@ -1,9 +1,11 @@
-package com.example.vicol.lab5pam;
+package com.example.vicol.lab5pam.activityes;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.vicol.lab5pam.R;
 
 public class Splash extends AppCompatActivity {
 

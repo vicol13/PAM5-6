@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import com.example.vicol.lab5pam.R;
 
-public class FragmentTransaction  {
+public class FragmentTransactionUtils  {
 
     /**
 
