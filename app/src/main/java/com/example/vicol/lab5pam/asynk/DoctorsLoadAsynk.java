@@ -63,10 +63,6 @@ public class DoctorsLoadAsynk extends AsyncTask<String,Void,ArrayList<Doctor>> {
             String jsonData = response.body().string();
             JSONArray JsonArray = new JSONArray(jsonData);
 
-   /*         for (int i = 0; i < array.length(); i++) {
-                JSONObject obj = array.getJSONObject(i);
-                System.out.println(obj.toString());
-            }*/
             if(response.code() == 200){
                 doctors = JsonUtils.getDoctorsFromJson(JsonArray);
                 this.httpCode = 200 ;

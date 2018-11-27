@@ -163,7 +163,7 @@
                 android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:clickable="true"
-                android:onClick="openHomeFragment"
+                android:onClick="openProfileFragment"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">

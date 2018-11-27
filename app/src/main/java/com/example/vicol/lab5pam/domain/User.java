@@ -10,6 +10,16 @@ public class User {
     private String  Password;
     private String  Base64Photo ;
 
+    public User(String fullName, String birthday, String email, String phone, String address, String username, String base64Photo) {
+        FullName = fullName;
+        Birthday = birthday;
+        Email = email;
+        Phone = phone;
+        Address = address;
+        Username = username;
+        Base64Photo = base64Photo;
+    }
+
     public User(String fullName, String birthday, String email, String phone, String address, String username, String password, String base64Photo) {
         FullName = fullName;
         Birthday = birthday;

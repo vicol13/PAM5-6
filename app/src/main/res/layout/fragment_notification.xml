@@ -121,7 +121,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/NameView"
+                android:id="@+id/NameView_notification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -152,7 +152,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/deseaseView"
+                android:id="@+id/deseaseView_deases"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -183,7 +183,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/locationView"
+                android:id="@+id/locationView_notification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -214,7 +214,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/descriptionView"
+                android:id="@+id/descriptionView_notification"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -272,7 +272,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/doctorRate"
+                    android:id="@+id/doctorRate_notification"
                     android:layout_width="25sp"
                     android:layout_height="22sp"
                     android:layout_marginStart="5dp"
@@ -343,7 +343,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <TextView
-                    android:id="@+id/doctorName"
+                    android:id="@+id/doctorName_notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
@@ -357,7 +357,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/doctorSpeciality"
+                    android:id="@+id/doctorSpeciality_notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
@@ -368,7 +368,7 @@
                     android:textSize="16sp"
                     android:textStyle="italic"
                     app:layout_constraintStart_toEndOf="@+id/doctorPhoto"
-                    app:layout_constraintTop_toBottomOf="@+id/doctorName" />
+                    app:layout_constraintTop_toBottomOf="@+id/doctorName_notification" />
 
                 <ImageView
                     android:id="@+id/doctorPhoto"

@@ -230,10 +230,13 @@
             android:layout_height="100dp">
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/requestBtn"
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/green_rounded"
+                android:clickable="true"
+                android:onClick="request"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">

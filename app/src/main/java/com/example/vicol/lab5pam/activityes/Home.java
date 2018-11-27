@@ -15,6 +15,7 @@ import com.example.vicol.lab5pam.fragments.DoctorInfoFragment;
 import com.example.vicol.lab5pam.fragments.DoctorListFragment;
 
 import com.example.vicol.lab5pam.fragments.NotificationFragment;
+import com.example.vicol.lab5pam.fragments.UserProfileFragment;
 import com.example.vicol.lab5pam.test.DocActivity;
 import com.example.vicol.lab5pam.utils.FragmentTransactionUtils;
 import com.example.vicol.lab5pam.utils.TokenUtils;
@@ -99,7 +100,8 @@ public  class  Home extends AppCompatActivity {
     }
 
     public void openProfileFragment(View view) {
-
+        UserProfileFragment fragment = new UserProfileFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,fragment).commit();
     }
 
 
