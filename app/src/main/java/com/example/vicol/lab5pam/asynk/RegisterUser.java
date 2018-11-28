@@ -43,7 +43,6 @@ public class RegisterUser extends AsyncTask<User, Integer, Integer> {
         this.user = users[0];
         int code = 404; //http code
 
-
         String formateJson = JsonUtils.userToJson(user);
         RequestBody body = RequestBody.create(json, formateJson);
         Request request = new Request.Builder()

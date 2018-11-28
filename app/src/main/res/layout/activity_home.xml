@@ -197,19 +197,19 @@
         </android.support.constraint.ConstraintLayout>
 
         <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintLayout"
+            android:id="@+id/addConsultation"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/green_circel"
+            android:clickable="true"
+            android:onClick="openAddNotificationFragment"
             app:layout_constraintEnd_toEndOf="@+id/bottomBar"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="openAddNotificationFragment">
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <ImageView
